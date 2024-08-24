@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/css/style.css" rel="stylesheet">
+    <link href="css/css/editview.css" rel="stylesheet"> <!-- Corrected the path here -->
+
+    <title>Edit Entry</title>
+</head>
+<body>
+    <div class="editentry">
+    <section class="container">
+        
+        <h1>Edit Entry</h1>
+        <form action="/deleteentry/<%= entry.id %>" method="post">
+            <button type="submit">Delete Entry</button>
+        </form>   
+        <form action="/updateentry/<%= entry.id %>" method="post">
+            <label for="editedEntry">Edited Entry:</label>
+            <textarea id="editedEntry" name="editedEntry" required><%= entry.entry %></textarea>
+            <button type="submit">Save Changes</button>
+        </form>
+        <a href="/personaldiary">Back to Diary</a>
+    </div>
+    </section>
+</body>
+</html>

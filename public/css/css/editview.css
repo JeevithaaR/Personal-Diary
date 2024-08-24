@@ -1,0 +1,28 @@
+
+.editentry h1,
+.viewentry h1 {
+    color: black;
+}
+
+.editentry body,
+.viewentry body {
+    text-align: center;
+}
+
+.editentry .container,
+.viewentry .container {
+    margin-top: 150px;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 10px black;
+    width: 400px;
+    margin-left: 450px;
+}
+
+.editentry form,
+.viewentry form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
